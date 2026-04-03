@@ -25,9 +25,9 @@ Most repositories carry architecture decisions in commit history, not in ADR fol
 This machine has a broken global `NPM_CONFIG_CACHE` value. Do not change it globally. Run npm commands with a per-command override instead.
 
 ```powershell
-$env:NPM_CONFIG_CACHE='C:\Users\Elite\AppData\Local\npm-cache'; npm install
-$env:NPM_CONFIG_CACHE='C:\Users\Elite\AppData\Local\npm-cache'; npm run demo:seed
-$env:NPM_CONFIG_CACHE='C:\Users\Elite\AppData\Local\npm-cache'; npm run dev
+$env:NPM_CONFIG_CACHE='C:\Users\YourName\AppData\Local\npm-cache'; npm install
+$env:NPM_CONFIG_CACHE='C:\Users\YourName\AppData\Local\npm-cache'; npm run demo:seed
+$env:NPM_CONFIG_CACHE='C:\Users\YourName\AppData\Local\npm-cache'; npm run dev
 ```
 
 Open `http://127.0.0.1:3000`, click `Try the bundled demo dig site`, and the app will generate `fixtures/demo-repo` on demand if it does not exist yet.
